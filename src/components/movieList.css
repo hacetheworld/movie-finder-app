@@ -1,0 +1,53 @@
+.movieRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .movieRow {
+    justify-content: center;
+  }
+}
+
+.movieRowItem {
+  width: calc(33.33% - 20px);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .movieRowItem {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .movieRowItem {
+    width: calc(100% - 20px);
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paginationButton {
+  background-color: black;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.paginationButton:hover {
+  background-color: rgba(10, 154, 250, 0.7);
+}
+
+.paginationButton.active {
+  background-color: rgba(250, 174, 9, 0.842);
+}
